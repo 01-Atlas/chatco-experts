@@ -1,0 +1,11 @@
+{
+  "name": "chatco-experts",
+  "version": "0.1.0",
+  "description": "Ask your Chat.co experts and open the documents supporting their answers.",
+  "author": { "name": "Chat.co" },
+  "homepage": "https://www.chat.co",
+  "license": "MIT",
+  "logo": "assets/chatco-logo.png",
+  "keywords": ["chatco", "experts", "knowledge", "citations"],
+  "mcpServers": "./mcp.json"
+}
