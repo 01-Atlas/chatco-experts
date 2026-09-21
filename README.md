@@ -21,6 +21,14 @@ Cursor discovers `.cursor-plugin/plugin.json` and `mcp.json`. Claude Code discov
 
 Your external AI client sends your request to Chat.co and receives the resulting answer, permitted excerpts, citations, and links. Its handling of that content is governed by that client's policies. Disconnecting stops future connector access; it cannot retract content already delivered.
 
+Consultations create Chat.co conversation records for follow-up questions and credit accounting. Chat.co also retains source references and operation results to reopen evidence and handle retries. Deletion and retention follow the [Chat.co Privacy Policy](https://www.chat.co/privacy-policy). The [Terms of Service](https://www.chat.co/terms-condition) describe access and credit charges. These pages are being updated for the connector before launch.
+
+The connector does not request the external client's full conversation history, memory, or unrelated files. Questions use the model provider configured for the selected expert. Supporting-document links remain subject to current Chat.co authorization and source availability.
+
+## Support
+
+Contact [support@chat.co](mailto:support@chat.co) for connection or review assistance. Manage authorized connections from [Connected applications](https://www.chat.co/connect).
+
 ## Package boundary
 
 This directory is the publishable package. It contains manifests, configuration, a skill, and Chat.co artwork. The application backend, infrastructure credentials, customer documents, and reviewer credentials must remain outside the public package. MIT applies to the package files; Chat.co names and marks remain the property of their owners.
