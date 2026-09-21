@@ -1,12 +1,12 @@
 # Chat.co experts
 
-Pre-release package for connecting Chat.co experts to supported external AI clients. The shared service is under development; this package has not been submitted or published to a marketplace, and the production endpoint is not yet launch-ready.
+Connect the experts in your Chat.co account to external AI clients through the production OAuth service. Live consultations, follow-ups, search, and document citations have been verified in Claude and ChatGPT. The OpenAI application is submitted for review; marketplace approval and client compatibility are tracked separately.
 
-The intended experience is to sign in to Chat.co, select a workspace, ask an expert, and receive an answer with citations and supporting-document links. Direct document search is available only when your Chat.co permissions allow it.
+Sign in to Chat.co, select a workspace, ask an expert, and receive an answer with citations and supporting-document links. Direct document search is available only when your Chat.co permissions allow it.
 
 ## Connection
 
-The planned remote MCP URL is `https://mcp.chat.co/mcp`. Use the client's OAuth sign-in flow. Do not put an API key or another person's login into these configuration files.
+The production remote MCP URL is `https://mcp.chat.co/mcp`. Use the client's OAuth sign-in flow. Do not put an API key or another person's login into these configuration files.
 
 Cursor discovers `.cursor-plugin/plugin.json` and `mcp.json`. Claude Code discovers `.claude-plugin/plugin.json` and `.mcp.json`. Grok Build packaging uses `.grok-plugin/plugin.json`, `.mcp.json`, and the shared skill. Marketplace acceptance and compatibility with each client are verified separately before release.
 
